@@ -68,13 +68,14 @@ nav .cta:hover{color:#fff;background:var(--accent-dark)}
 .aud b{display:block;color:var(--navy);font-size:17px}
 .aud span{color:var(--muted);font-size:14.5px}
 
-.photo{aspect-ratio:4/5;max-width:440px;width:100%;border-radius:20px;background:var(--line);border:2px dashed #A9B6C3;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;text-align:center;padding:24px}
+.photo{display:block;width:100%;max-width:400px;aspect-ratio:400/417;object-fit:cover;border-radius:20px;box-shadow:0 0 0 8px #fff,0 0 0 9px var(--line),0 18px 40px rgba(15,42,68,.12);margin:9px auto}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chip{font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
 .chip.gold{background:var(--gold-soft);color:var(--gold-ink)}
 
 figure{margin:0;background:var(--ground);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:18px}
 blockquote{margin:0;font-size:17px}
+figure .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold-ink);background:var(--gold-soft);padding:4px 10px;border-radius:999px}
 figcaption{font-size:14.5px;color:var(--muted)}figcaption b{color:var(--navy)}
 
 /* FAQ */
@@ -137,8 +138,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <h1>Contabilidade que simplifica a vida da sua empresa.</h1>
       <p>Cuidamos dos impostos, da folha e das obrigações para você focar no que importa: fazer o seu negócio crescer.</p>
       <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:8px">
-        <!-- Troque 5500000000000 pelo número do WhatsApp com DDI e DDD, só dígitos -->
-        <a class="btn btn-primary" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20SCA" target="_blank" rel="noopener">
+                <a class="btn btn-primary" href="https://wa.me/5511971680959?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20SCA" target="_blank" rel="noopener">
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
           Falar no WhatsApp
         </a>
@@ -190,12 +190,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <section id="sobre">
   <div class="wrap grid two">
-    <div class="photo">[Foto da contadora]</div>
+    <img class="photo" src="foto.jpg" alt="Foto da contadora responsável pela SCA Contabilidade" width="400" height="417">
     <div style="display:flex;flex-direction:column;gap:18px">
       <span class="eyebrow">Sobre a SCA</span>
       <h2>Uma contadora de verdade cuidando dos seus números</h2>
-      <p style="margin:0;color:var(--muted);font-size:17px">[NOME DA CONTADORA] é contadora registrada no CRC e fundou a SCA para oferecer uma contabilidade próxima, clara e sem complicação. [Conte aqui a trajetória, formação e anos de experiência.]</p>
-      <div class="chips"><span class="chip">CRC [UF] [NÚMERO]</span><span class="chip gold">[Formação / especialização]</span></div>
+      <p style="margin:0;color:var(--muted);font-size:17px">[NOME DA CONTADORA] é formada em Ciências Contábeis pela Universidade Braz Cubas, em Mogi das Cruzes, e pós-graduada em Direito Tributário. Fundou a SCA para oferecer uma contabilidade próxima, clara e sem complicação, com o conhecimento tributário que ajuda sua empresa a pagar só o que é devido.</p>
+      <div class="chips"><span class="chip">CRC [UF] [NÚMERO]</span><span class="chip gold">Pós em Direito Tributário</span><span class="chip gold">Ciências Contábeis · Braz Cubas</span></div>
     </div>
   </div>
 </section>
@@ -204,9 +204,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
     <h2 style="text-align:center">O que dizem nossos clientes</h2>
     <div class="grid cards">
-      <figure><blockquote>“[Depoimento real de um cliente sobre o atendimento.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
-      <figure><blockquote>“[Depoimento real de um cliente sobre os resultados.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
-      <figure><blockquote>“[Depoimento real de um cliente sobre a praticidade.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
+      <figure><span class="tag">Exemplo</span><blockquote>“Atendimento rápido pelo WhatsApp e tudo explicado de um jeito simples. Finalmente entendo os impostos da minha empresa.”</blockquote><figcaption><b>[Nome do cliente]</b> · Prestação de serviços</figcaption></figure>
+      <figure><span class="tag">Exemplo</span><blockquote>“A troca de contador foi tranquila, sem dor de cabeça. Com o planejamento tributário, mudamos de regime e economizamos.”</blockquote><figcaption><b>[Nome do cliente]</b> · Comércio</figcaption></figure>
+      <figure><span class="tag">Exemplo</span><blockquote>“Abri minha empresa em poucos dias, com orientação em cada etapa. Recomendo para quem está começando.”</blockquote><figcaption><b>[Nome do cliente]</b> · Profissional liberal</figcaption></figure>
     </div>
   </div>
 </section>
@@ -229,13 +229,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <h2>Vamos conversar sobre a sua empresa?</h2>
       <p>Responda em poucos minutos pelo WhatsApp ou deixe uma mensagem que retornamos.</p>
       <div class="info">
-        <span>WhatsApp: [(XX) XXXXX-XXXX]</span>
+        <span>WhatsApp: <a href="https://wa.me/5511971680959" target="_blank" rel="noopener" style="color:#fff">(11) 97168-0959</a></span>
         <span>E-mail: [contato@scacontabilidade.com.br]</span>
-        <span>Endereço: [Rua, número, bairro, cidade/UF]</span>
+        <span>Endereço: <a href="https://www.google.com/maps/search/?api=1&amp;query=R.+Luiz+Ser%C3%A1phico+J%C3%BAnior%2C+430+-+Jardim+Caravelas%2C+S%C3%A3o+Paulo+-+SP" target="_blank" rel="noopener" style="color:#fff">R. Luiz Seráphico Júnior, 430 – Jardim Caravelas, São Paulo/SP</a></span>
         <span>Horário: [Seg a sex, 8h às 18h]</span>
       </div>
     </div>
-    <!-- Formulário: abre o WhatsApp com a mensagem preenchida (troque o número no script abaixo) -->
+    <!-- Formulário: abre o WhatsApp com a mensagem preenchida -->
     <form id="form-contato">
       <label>Nome<input type="text" name="nome" required></label>
       <label>WhatsApp ou e-mail<input type="text" name="contato" required></label>
@@ -263,7 +263,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <script>
   // Número do WhatsApp com DDI 55 + DDD + número, só dígitos
-  var WHATSAPP = '5500000000000';
+  var WHATSAPP = '5511971680959';
   document.getElementById('form-contato').addEventListener('submit', function (e) {
     e.preventDefault();
     var f = e.target;
