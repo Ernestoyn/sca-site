@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Versão de teste: remova a linha abaixo quando o site for para o domínio definitivo -->
+<meta name="robots" content="noindex, nofollow">
+<title>SCA Contabilidade e Consultoria Contábil</title>
+<meta name="description" content="Contabilidade consultiva para MEI, prestadores de serviço, comércio e profissionais liberais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --navy:#0F2A44; --navy-2:#173A5C; --navy-line:#2A4E72; --navy-dark:#0A1E31;
+  --ink:#12263A; --muted:#4A5B6C; --line:#E3E7EC; --ground:#F6F7F9;
+  --accent:#0B6E64; --accent-dark:#08544C; --accent-soft:#E6F3F1;
+  --gold:#E2C47A; --gold-soft:#F4ECD8; --gold-ink:#6B5214;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--ground);line-height:1.55}
+a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.serif{font-family:'DM Serif Display',serif;font-weight:400}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+h2{margin:0;font-family:'DM Serif Display',serif;font-weight:400;font-size:42px;line-height:1.15;color:var(--navy)}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:16px 28px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark);color:#fff}
+.btn-ghost{color:#fff;border:1.5px solid #5D7590}.btn-ghost:hover{color:#fff;border-color:#fff}
+.grid{display:grid;gap:20px}
+.two{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:center}
+
+/* Cabeçalho */
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.logo{width:44px;height:44px;border-radius:10px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:20px}
+.brand b{display:block;font-size:17px;font-weight:800;line-height:1.2}
+.brand small{display:block;font-size:12.5px;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-size:15px;font-weight:600}
+nav a{color:var(--ink);text-decoration:none}
+nav .cta{background:var(--accent);color:#fff;padding:12px 20px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center}
+nav .cta:hover{color:#fff;background:var(--accent-dark)}
+
+/* Hero */
+.hero{background:var(--navy);color:#fff;padding:96px 0 104px}
+.hero h1{margin:0;font-family:'DM Serif Display',serif;font-weight:400;font-size:58px;line-height:1.08}
+.hero p{margin:0;font-size:19px;color:#C9D4DF;max-width:520px}
+.hero .eyebrow{color:var(--gold)}
+.stack{display:flex;flex-direction:column;gap:24px}
+.why{background:var(--navy-2);border:1px solid var(--navy-line);border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:22px}
+.why .item{display:flex;gap:14px;align-items:flex-start;color:#DCE4EC}
+.why svg{flex-shrink:0;margin-top:2px}
+.why .crc{border-top:1px solid var(--navy-line);padding-top:18px;font-size:14px;color:#A9BACB}
+
+/* Cartões */
+.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.card h3{margin:0;font-size:19px;font-weight:700;color:var(--navy)}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.icon{width:48px;height:48px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center}
+
+.white{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.aud{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.aud div{background:var(--ground);border-radius:14px;padding:22px}
+.aud b{display:block;color:var(--navy);font-size:17px}
+.aud span{color:var(--muted);font-size:14.5px}
+
+.photo{aspect-ratio:4/5;max-width:440px;width:100%;border-radius:20px;background:var(--line);border:2px dashed #A9B6C3;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;text-align:center;padding:24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.chip.gold{background:var(--gold-soft);color:var(--gold-ink)}
+
+figure{margin:0;background:var(--ground);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:18px}
+blockquote{margin:0;font-size:17px}
+figcaption{font-size:14.5px;color:var(--muted)}figcaption b{color:var(--navy)}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 24px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:700;font-size:17px;color:var(--navy);min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary span{font-size:26px;color:var(--accent);transition:transform .2s}
+details[open] summary span{transform:rotate(45deg)}
+details p{margin:0 0 22px;color:var(--muted)}
+
+/* Contato */
+.contact{background:var(--navy);color:#fff}
+.contact h2{color:#fff}
+.contact p{margin:0;color:#C9D4DF;font-size:17px}
+.info{display:flex;flex-direction:column;gap:14px;color:#DCE4EC}
+form{background:#fff;color:var(--ink);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:16px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14.5px}
+input,select,textarea{font:inherit;font-size:16px;border:1.5px solid #C9D2DB;border-radius:10px;padding:12px 14px;min-height:48px;background:#fff;color:var(--ink)}
+textarea{resize:vertical}
+button{font:inherit;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:16px;font-weight:700;font-size:16px;min-height:52px;cursor:pointer}
+button:hover{background:var(--accent-dark)}
+
+footer{background:var(--navy-dark);color:#A9BACB;padding:32px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+@media (max-width:700px){
+  section{padding:64px 0}
+  .hero{padding:64px 0 72px}
+  .hero h1{font-size:40px}
+  h2{font-size:32px}
+  nav{gap:16px;font-size:14px}
+  nav .hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head">
+    <a href="#inicio" class="brand">
+      <span class="logo">SCA</span>
+      <span><b>SCA Contabilidade</b><small>e Consultoria Contábil</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#servicos" class="hide-sm">Serviços</a>
+      <a href="#para-quem" class="hide-sm">Para quem</a>
+      <a href="#sobre" class="hide-sm">Sobre</a>
+      <a href="#duvidas" class="hide-sm">Dúvidas</a>
+      <a href="#contato" class="cta">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="wrap grid two">
+    <div class="stack">
+      <span class="eyebrow">Contabilidade consultiva</span>
+      <h1>Contabilidade que simplifica a vida da sua empresa.</h1>
+      <p>Cuidamos dos impostos, da folha e das obrigações para você focar no que importa: fazer o seu negócio crescer.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:8px">
+        <!-- Troque 5500000000000 pelo número do WhatsApp com DDI e DDD, só dígitos -->
+        <a class="btn btn-primary" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20SCA" target="_blank" rel="noopener">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+    <div class="why">
+      <b style="font-size:18px">Por que a SCA?</b>
+      <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E2C47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Atendimento próximo, com uma contadora que conhece o seu negócio pelo nome.</span></div>
+      <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E2C47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Tudo digital: documentos, guias e relatórios pelo WhatsApp e e-mail.</span></div>
+      <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E2C47A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Planejamento tributário para pagar só o imposto que é devido.</span></div>
+      <div class="crc">Registro CRC: [NÚMERO DO CRC]</div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:640px">
+      <span class="eyebrow">Serviços</span>
+      <h2>Tudo o que sua empresa precisa, em um só lugar</h2>
+    </div>
+    <div class="grid cards">
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span><h3>Abertura de empresa</h3><p>Do CNPJ ao alvará, escolhemos com você o melhor enquadramento desde o primeiro dia.</p></article>
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><h3>Contabilidade mensal</h3><p>Escrituração, balanços e obrigações em dia para MEI, Simples Nacional e Lucro Presumido.</p></article>
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg></span><h3>Folha de pagamento</h3><p>Admissões, férias, rescisões, eSocial e pró-labore, sem dor de cabeça.</p></article>
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Planejamento tributário</h3><p>Análise do regime ideal para reduzir a carga de impostos dentro da lei.</p></article>
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>Imposto de Renda PF</h3><p>Declaração completa, com revisão para evitar malha fina e aproveitar deduções.</p></article>
+      <article class="card"><span class="icon"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B6E64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9M21 3l-9 9M15 3h6v6"/></svg></span><h3>Consultoria contábil</h3><p>Orientação para decisões: crescer, contratar, trocar de regime ou regularizar pendências.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="para-quem" class="white">
+  <div class="wrap grid two">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="eyebrow">Para quem atendemos</span>
+      <h2>Do MEI à empresa em crescimento</h2>
+      <p style="margin:0;color:var(--muted);font-size:17px">Cada negócio tem uma realidade. Adaptamos o atendimento ao seu porte e ao seu momento.</p>
+    </div>
+    <div class="grid aud">
+      <div><b>MEI</b><span>DAS, declaração anual e transição para ME</span></div>
+      <div><b>Prestadores de serviço</b><span>Notas fiscais, ISS e Fator R</span></div>
+      <div><b>Comércio</b><span>ICMS, estoque e substituição tributária</span></div>
+      <div><b>Profissionais liberais</b><span>Médicos, dentistas, advogados, arquitetos</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap grid two">
+    <div class="photo">[Foto da contadora]</div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <span class="eyebrow">Sobre a SCA</span>
+      <h2>Uma contadora de verdade cuidando dos seus números</h2>
+      <p style="margin:0;color:var(--muted);font-size:17px">[NOME DA CONTADORA] é contadora registrada no CRC e fundou a SCA para oferecer uma contabilidade próxima, clara e sem complicação. [Conte aqui a trajetória, formação e anos de experiência.]</p>
+      <div class="chips"><span class="chip">CRC [UF] [NÚMERO]</span><span class="chip gold">[Formação / especialização]</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="white" style="border-bottom:0">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+    <h2 style="text-align:center">O que dizem nossos clientes</h2>
+    <div class="grid cards">
+      <figure><blockquote>“[Depoimento real de um cliente sobre o atendimento.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
+      <figure><blockquote>“[Depoimento real de um cliente sobre os resultados.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
+      <figure><blockquote>“[Depoimento real de um cliente sobre a praticidade.]”</blockquote><figcaption><b>[Nome do cliente]</b> · [Empresa / ramo]</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+    <h2 style="text-align:center">Perguntas frequentes</h2>
+    <div class="faq">
+      <details><summary>MEI precisa de contador?<span aria-hidden="true">+</span></summary><p>Não é obrigatório, mas um contador ajuda a evitar multas, organizar as finanças e saber a hora certa de deixar de ser MEI.</p></details>
+      <details><summary>Quanto custa abrir uma empresa?<span aria-hidden="true">+</span></summary><p>Depende do tipo de empresa e da cidade. Fale conosco para um orçamento sem compromisso: [VALOR OU "SOB CONSULTA"].</p></details>
+      <details><summary>Posso trocar de contador a qualquer momento?<span aria-hidden="true">+</span></summary><p>Sim. Cuidamos de toda a transição com o escritório anterior para que nada fique para trás.</p></details>
+      <details><summary>Atendem empresas de outras cidades?<span aria-hidden="true">+</span></summary><p>[Sim, atendemos de forma 100% digital em todo o Brasil / Atendemos a região de CIDADE.]</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="wrap grid two" style="align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2>Vamos conversar sobre a sua empresa?</h2>
+      <p>Responda em poucos minutos pelo WhatsApp ou deixe uma mensagem que retornamos.</p>
+      <div class="info">
+        <span>WhatsApp: [(XX) XXXXX-XXXX]</span>
+        <span>E-mail: [contato@scacontabilidade.com.br]</span>
+        <span>Endereço: [Rua, número, bairro, cidade/UF]</span>
+        <span>Horário: [Seg a sex, 8h às 18h]</span>
+      </div>
+    </div>
+    <!-- Formulário: abre o WhatsApp com a mensagem preenchida (troque o número no script abaixo) -->
+    <form id="form-contato">
+      <label>Nome<input type="text" name="nome" required></label>
+      <label>WhatsApp ou e-mail<input type="text" name="contato" required></label>
+      <label>Assunto
+        <select name="assunto">
+          <option>Abrir empresa</option>
+          <option>Trocar de contador</option>
+          <option>Imposto de Renda</option>
+          <option>Outro assunto</option>
+        </select>
+      </label>
+      <label>Mensagem<textarea name="mensagem" rows="4"></textarea></label>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 SCA Contabilidade e Consultoria Contábil · CNPJ [00.000.000/0000-00]</span>
+    <span>CRC [UF] [NÚMERO]</span>
+  </div>
+</footer>
+
+<script>
+  // Número do WhatsApp com DDI 55 + DDD + número, só dígitos
+  var WHATSAPP = '5500000000000';
+  document.getElementById('form-contato').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var texto = 'Olá! Vim pelo site da SCA.\n' +
+      'Nome: ' + f.nome.value + '\n' +
+      'Contato: ' + f.contato.value + '\n' +
+      'Assunto: ' + f.assunto.value + '\n' +
+      (f.mensagem.value ? 'Mensagem: ' + f.mensagem.value : '');
+    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texto), '_blank');
+  });
+</script>
+</body>
+</html>
